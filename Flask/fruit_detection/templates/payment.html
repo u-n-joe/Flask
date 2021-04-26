@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body>
+<div class="container">
+    <br>
+
+    <ul class="nav nav-pills pull-left">
+        <li role="presentation" class="active"><a href="{{ url_for('main') }}">뒤로가기</a></li>
+    </ul>
+
+    <!--    <ul class="nav nav-pills pull-right">-->
+    <!--        <li role="presentation"><a href="{{ url_for('login') }}">회원</a></li>-->
+    <!--        <li role="presentation"><a href="{{ url_for('join') }}">회원 가입</a></li>-->
+    <!--    </ul>-->
+    <div class="page-header" role="presentation" style="text-align:center">
+        <h3>결제</h3>
+    </div>
+    <center>
+        <h3><p class="label label-default">{{ data.price }} 원</p></h3>
+
+        <div class="btn-group-vertical" role="group" aria-label="...">
+<!--            <button type="button" class="btn btn-outline-dark">현금 결제</button>-->
+<!--            <button type="button" class="btn btn-outline-dark">카드 결제</button>-->
+            <a class="btn btn-info" href="pay_cash" role="button">현금 결제</a>
+            <a class="btn btn-light" href="pay_card" role="button">카드 결제</a>
+            <!--            <button type="button" class="btn btn-outline-dark">포인트 결제</button>-->
+        </div>
+    </center>
+</div>
+</body>
+</html>

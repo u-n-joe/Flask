@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sign.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h3 class="text-muted">회원 로그인</h3>
+    </div>
+
+    <form class="form-sign">
+        <h2 class="form-sign-heading">{{ form.num.label }}</h2>
+        {{ form.num(class="form-control") }}
+        {{ form.submit(class="btn btn-lg btn-primary btn-block") }}
+    </form>
+</div>
+</body>
+</html>

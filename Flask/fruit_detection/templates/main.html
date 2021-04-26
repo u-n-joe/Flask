@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <br>
+
+    <div class="page-header">
+
+        <div role="presentation" style="text-align:center">
+            <h3>메인</h3>
+        </div>
+    </div>
+
+    <ul class="nav nav-pills pull-right">
+        <form action="/payment" method="POST">
+            <center>
+                <br>
+                <br>
+                {{ form.price.label }}
+                {{ form.price() }}
+                <br>
+                <br>
+                {{ form.submit() }}
+            </center>
+        </form>
+
+        <form action="/add" method="POST">
+            <center>
+                <br>
+                <br>
+                {{ form.price.label }}
+                {{ form.price() }}
+                <br>
+                <br>
+                {{ form.submit() }}
+            </center>
+        </form>
+    </ul>
+
+
+</div>
+
+
+</body>
+</html>
